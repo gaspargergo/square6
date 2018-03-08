@@ -1,0 +1,49 @@
+<!doctype HTML>
+<html>
+
+<head>
+	<style type="text/css">
+		#square{
+			height: 0
+			width: 0;
+			position: absolute;
+			left: 50%;
+			margin-left: -300px;
+			top: 50%;
+			margin-top: -300px;
+
+			animation: transf 0.25s infinite;
+
+		}
+
+		@keyframes transf {
+	      0% {
+	        border-left: 300px solid transparent;
+  			border-right: 300px solid black;
+  
+  			border-top: 300px solid black;
+  			border-bottom: 300px solid transparent;
+	      }
+	      50% {
+	      	border-left: 300px solid black;
+  			border-right: 300px solid transparent;
+  
+  			border-top: 300px solid transparent;
+  			border-bottom: 300px solid black;
+	      }
+	      100% {
+	        border-left: 300px solid transparent;
+  			border-right: 300px solid black;
+  
+  			border-top: 300px solid black;
+  			border-bottom: 300px solid transparent;
+	      }
+	    }
+	</style>
+</head>
+
+<body>
+	<div id="square"></div>
+</body>
+
+</html>
